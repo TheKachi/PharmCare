@@ -99,7 +99,7 @@ header {
   justify-content: space-between;
   height: 90vh;
   padding: 4rem;
-  /* background: linear-gradient(90deg, white 60%, #6853df 40%); */
+  background: linear-gradient(90deg, white 60%, #6853df 40%);
 }
 
 .hero-right {
