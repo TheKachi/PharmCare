@@ -26,6 +26,7 @@ body {
 h2 {
   font-family: "Poppins";
   font-weight: 700;
+  font-size: 40px;
   color: #169fa4;
 }
 
@@ -61,7 +62,7 @@ main {
 
 /****BUTTONS****/
 button {
-  padding: 0.8rem 1rem;
+  padding: 1rem 2rem;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
@@ -70,14 +71,14 @@ button {
   border-radius: 81px;
 
   border: 1px solid #6d5ad8;
-  margin: 4rem;
+  margin-top: 4rem;
 }
 .menu {
   display: none;
 }
 .download-btns {
   display: inline-block;
-  /* margin-top: 5rem; */
+  margin: 1rem 0;
 }
 
 #google-store-btn {
@@ -124,20 +125,31 @@ header {
   /* overflow: hidden; */
   /* padding: 8rem 0; */
   display: grid;
-  grid-template-columns: repeat(2, minmax(500px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 4rem;
   /* display: flex;*/
   overflow: hidden;
-  padding: 6rem 0 0 4rem;
+  padding: 4rem;
 }
 
-.about-item {
-  /* width: 500px; */
-  /* padding-top: 5rem; */
+.give-advice {
+  grid-column: 2;
+}
+
+.first-img {
+  grid-column: 1;
+}
+
+.online-health {
+}
+
+.second-img {
 }
 
 .about-info {
   display: flex;
+  text-align: justify;
   /* justify-content: space-between; */
 }
 
@@ -146,6 +158,7 @@ header {
   width: fit-content;
   margin-right: 20px;
   margin-top: 10px;
+  /* align-self: center; */
 }
 
 /*** Try Section****/
@@ -179,6 +192,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 4rem;
+  font-weight: 100;
 }
 
 .footer h4 {
@@ -231,8 +245,15 @@ header {
   }
 
   .about-section {
-    padding: 0 2rem;
+    padding: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    align-content: space-between; */
     display: block;
+  }
+
+  .about-item {
+    margin-bottom: 2rem;
   }
 
   .lg-heading {
@@ -249,6 +270,7 @@ header {
 
   .try-section {
     display: block;
+    text-align: center;
     padding: 2rem;
   }
 
@@ -267,5 +289,32 @@ header {
 
   .footer {
     display: block;
+    text-align: center;
+  }
+
+  .social {
+    display: block;
+  }
+
+  .footer-links {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-section,
+  .try-section {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
   }
 }
