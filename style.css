@@ -26,7 +26,7 @@ body {
 h2 {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 1.5rem;
   color: #169fa4;
 }
 
@@ -100,6 +100,7 @@ header {
   justify-content: space-between;
   height: 90vh;
   padding: 4rem;
+  transition: all 0.5s ease;
   background: linear-gradient(90deg, white 60%, #6853df 40%);
 }
 
@@ -118,6 +119,7 @@ header {
 
 .hero-img {
   height: 90vh;
+  transition: all 0.5s ease-in;
 }
 
 /*** ABOUT SECTION ****/
