@@ -165,21 +165,32 @@ header {
 }
 
 /*****Footer****/
-
-.footer {
-  color: #fff;
-  background-color: #6d5ad8;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 4rem;
+.footer{
+   color: #fff;
+  background-color: #6d5ad8;  
+  padding: 1rem 4rem;
   font-weight: 100;
+
+}
+.footer-info {
+ 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+
 }
 
-.footer h4 {
+.footer h4, p, a {
   color: #fff;
 }
-
+.footer-header h4 {
+  font-weight: 700;
+}
+.footer p {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 12px;
+}
 .features,
 .company {
   justify-self: center;
@@ -190,7 +201,7 @@ header {
   /* justify-content: space-between; */
 }
 .footer-links {
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
   align-self: center;
 }
 
@@ -262,7 +273,7 @@ header {
     justify-content: center;
   }
 
-  .footer {
+  .footer-info {
     display: block;
     text-align: center;
   }
@@ -291,5 +302,9 @@ header {
   }
   h4 {
     font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
   }
 }
