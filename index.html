@@ -3,57 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>PharmCare</title>
   </head>
   <body>
     <header>
       <img class="logo" src="./Assets/pharmcare.svg" alt="PharmCare logo" />
-      <!-- <img class="menu" src="./Assets/Group 456.svg" alt="" /> -->
-
-      <!-- <nav class="menu">
-        <ul class="menu-nav">
-          <li>About us</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-      </nav>  -->
     </header>
 
     <main id="home">
-      <div class="hero-section">
-        <div class="hero-left">
-          <div class="hero-left-text">
-            <h1 class="lg-heading">
-              Get your prescriptions <br />
-              on the go.
-            </h1>
-            <p class="hero-paragraph">
-              Get the right drugs for the right ailment by writing down the
-              symptoms. Call us right away and get information, while talking yo
-              experienced health care experts.
-            </p>
-          </div>
-
-          <div class="btn-1 download-btns">
-            <img
-              class="db"
-              src="./Assets/icon-app-googlestore.svg"
-              alt=""
-              id="google-store-btn"
-            />
-            <img class="db" src="./Assets/icon-app-appstore.svg" alt="" />
-          </div>
+      <section class="hero" data-aos="fade-up">
+        <div class="hero-content">    
+            <h1 class="lg-heading">Get your prescriptions <br />on the go.</h1>
+            <p class="hero-paragraph">Get the right drugs for the right ailment by writing down the symptoms. Call us right away and get information, while talking yo experienced health care experts.</p>
+            <div class="btn-1 download-btns">
+              <img class="db" src="./Assets/icon-app-googlestore.svg"alt="" id="google-store-btn"/>
+              <img class="db" src="./Assets/icon-app-appstore.svg" alt="" />
+            </div>
         </div>
+        <img class="hero-img" src="./Assets/phone.png" alt="" />     
+      </section>
 
-        <div class="hero-right">
-          <!-- <img class="hero-img" src="./Assets/hero-bg.png" alt="" /> -->
-          <img class="hero-img" src="./Assets/phone.png" alt="" />
-        </div>
-      </div>
-
-      <div class="about-section">
-        <div class="about-item give-advice">
+      <section class="about-section">
+        <div class="about-item give-advice" data-aos="fade-right">
           <h2>We Give Advice</h2>
           <div class="about-info">
             <img class="about-img" src="./Assets/profile-circle.png" alt="" />
@@ -90,10 +63,9 @@
         <img
           class="about-item first-img"
           src="./Assets/Prescription Drug.png"
-          alt=""
+          alt="" data-aos="fade-up"
         />
-
-        <div class="about-item online-health">
+        <div class="about-item online-health" data-aos="fade-up>
           <div class="about-info">
             <img class="about-img" src="./Assets/Group 455.png" alt="" />
             <div>
@@ -115,12 +87,12 @@
         <img
           class="about-item second-img"
           src="./Assets/Online Health Check.png"
-          alt=""
+          alt="" data-aos="fade-up"
         />
-      </div>
+      </section>
 
-      <div class="try-section">
-        <div class="try-left">
+      <section class="try-section" data-aos="fade-left">
+        <div class="try-left" data-aos="fade>
           <h3 class="success">Be our Success story</h3>
           <h2 class="try">Try for free</h2>
           <h4>
@@ -137,13 +109,12 @@
             <img class="db" src="./Assets/icon-app-appstore.svg" alt="" />
           </div>
         </div>
-        <div class="try-right">
-          <img src="./Assets/phone-circ.png" alt="" />
-          <!-- <img src="./Assets/Homepage.png" alt="" /> -->
-        </div>
-      </div>
+      
+        <img class="try-img" src="./Assets/phone-circ.png" alt="" />
+     
+      </section>
 
-      <div class="footer">
+      <section class="footer" data-aos="fade">
         <div>
           <img class="logo" src="./Assets/pharmcare.svg" alt="logo" />
           <h4>
@@ -177,7 +148,26 @@
             <img src="./Assets/twitter-footer.png" alt="" />
           </div>
         </div>
-      </div>
+      </section>
     </main>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+  <script>
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.try-section',
+        start: 'center bottom'
+      }
+    });
+
+    tl.from('.try-img', {x:200, opacity:0, duration: 0.7})
+    .from('.try-left', {y: 300, opacity: 0, duration: 0.5}, '-=1')
+  </script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
   </body>
 </html>
